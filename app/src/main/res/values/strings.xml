@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">W4D</string>
+    <string name="signup"><u>Signup</u></string>
+    <string name="Login"><u>Login</u></string>
+    <string name="scan_barcode_vin_on_the_vehicle">Scan Barcode VIN on the Vehicle</string>
+    <string name="Barcode">Barcode</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="post_vehicle">Post Vehicle</string>
+    <string name="todo">TODO</string>
+    <string name="car_app">CAR APP</string>
+
+</resources>
