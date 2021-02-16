@@ -1,4 +1,4 @@
-package com.example.w4d.Adatpers;
+package com.example.w4d.Model;
 
 import android.graphics.drawable.Drawable;
 

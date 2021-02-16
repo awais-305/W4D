@@ -6,9 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 
-import com.example.w4d.Activities.MainActivity;
+import com.example.w4d.Activities.LoginActivity;
 import com.example.w4d.R;
 
 import java.util.Timer;
@@ -26,13 +25,10 @@ public class SplashActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
 
 
-
-
-
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(getApplicationContext() , MainActivity.class);
+                Intent intent = new Intent(getApplicationContext() , LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

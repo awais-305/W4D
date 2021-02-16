@@ -5,32 +5,27 @@
     android:layout_height="75dp"
     android:layout_marginTop="8dp"
     android:background="@color/grey"
+    android:gravity="center_vertical"
     android:orientation="horizontal"
     android:weightSum="3"
     >
 
-
     <ImageView
         android:id="@+id/image_view_item"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
+        android:src="@drawable/car"
         android:contentDescription="@string/todo" />
 
     <TextView
-
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:paddingLeft="20dp"
-        android:layout_marginTop="25sp"
-
+        android:layout_marginStart="20dp"
+        android:text="@string/post_vehicle"
         android:textColor="@color/black"
         android:id="@+id/textview_item"
-
         />
-
 
 </LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/carFragment">
+
+    <fragment
+        android:id="@+id/carFragment"
+        android:name="com.example.w4d.Fragment.CarFragment"
+        android:label="CarFragment"
+        tools:layout="@layout/fragment_car">
+        <action
+            android:id="@+id/action_carFragment_to_fragmentPostVehicle1"
+            app:destination="@id/fragmentPostVehicle1" />
+        <action
+            android:id="@+id/action_carFragment_to_fragmentInventory"
+            app:destination="@id/fragmentInventory" />
+        <action
+            android:id="@+id/action_carFragment_to_fragmentSearch"
+            app:destination="@id/fragmentSearch" />
+        <action
+            android:id="@+id/action_carFragment_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/postVehicleFragment"
+        android:name="com.example.w4d.Fragment.CarFragment"
+        android:label="CarFragment"
+        tools:layout="@layout/fragment_post_vehicle"/>
+
+    <fragment
+        android:id="@+id/fragmentPostVehicle1"
+        android:name="com.example.w4d.Fragment.PostVehicleFragment1"
+        android:label="FragmentPostVehicle1"
+        tools:layout="@layout/fragment_post_vehicle1">
+        <action
+            android:id="@+id/action_fragmentPostVehicle1_to_postVehicleFragment"
+            app:destination="@id/postVehicleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentInventory"
+        android:name="com.example.w4d.Fragment.PostVehicleFragment1"
+        android:label="FragmentPostVehicle1"
+        tools:layout="@layout/fragment_inventory"/>
+
+    <fragment
+        android:id="@+id/fragmentSearch"
+        android:name="com.example.w4d.Fragment.PostVehicleFragment1"
+        android:label="FragmentPostVehicle1"
+        tools:layout="@layout/fragment_search"/>
+
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.example.w4d.Fragment.PostVehicleFragment1"
+        android:label="FragmentPostVehicle1"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentUpdateEmail"
+            app:destination="@id/fragmentUpdateEmail" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentChangePassword"
+            app:destination="@id/fragmentChangePassword" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentUpdateEmail"
+        android:name="com.example.w4d.Fragment.PostVehicleFragment1"
+        android:label="FragmentPostVehicle1"
+        tools:layout="@layout/fragment_update_email"/>
+
+    <fragment
+        android:id="@+id/fragmentChangePassword"
+        android:name="com.example.w4d.Fragment.PostVehicleFragment1"
+        android:label="FragmentPostVehicle1"
+        tools:layout="@layout/fragment_change_password"/>
+
+</navigation>
